@@ -10,7 +10,7 @@ const got = require('got');
 const semver = require('semver');
 const tar = require('tar');
 
-const distBaseUrl = 'https://cdn.rawgit.com/pi0/libvips/master/dist/';
+const distBaseUrl = 'https://unpkg.com/libvips@0.0.2/dist/';
 
 // Use NPM-provided environment variable where available, falling back to require-based method for Electron
 const minimumLibvipsVersion = process.env.npm_package_config_libvips || require('./package.json').config.libvips;
